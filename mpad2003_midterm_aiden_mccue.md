@@ -27,11 +27,20 @@ And to create an unordered list, we simply put a star (`*`) before each item.
 Insert text here.
 
 ## 2. Getting Data
-Please follow [my spreadsheet](https://docs.google.com/spreadsheets/d/1GokeETvZ1cxyxIsTR-2ET4Xro1sdnuprIIzWWIWIJhU/edit?usp=sharing).
+### 2.1 Importation
+To begin you must first import the dataset into Google Sheets. To do this you must download the CSV file mentioned previously. 
+Then open a new spreadsheet in [Google Sheets](sheets.new). Select File > Import and then select the CSV file.
 
 ![](initialscreentshot.png)<br>
 *Figure 1: Initial dataset upon importation.*
 
+After importing, the dataset will look like this. However by the end of the project it will look much different.
+To see this you can view my [final spreadsheet](https://docs.google.com/spreadsheets/d/1GokeETvZ1cxyxIsTR-2ET4Xro1sdnuprIIzWWIWIJhU/edit?usp=sharing).
+
+### 2.2 Initial Observations
+
+Upon intial importation the dataset has 11 columns and 28539 rows. Each column features various different
+aspects of recorded data about Ottawa 311 calls. The data is somewhat clean but will definitly need some work. There are many missing elememts as well as needless clutter such as the translated elements.
 
 **Here are examples of functions and lines of code put in grey boxes:**
 
