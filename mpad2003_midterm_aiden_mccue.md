@@ -31,8 +31,8 @@ The dataset was collected by the City of Ottawa and then released to the public.
 This report will be outlined in sections. These sections include getting the data, a quick overview of each column, cleaning the data.... 
 ## 2. Getting Data
 ### 2.1 Importation
-To begin you must first import the dataset into Google Sheets. To do this you must download the CSV file mentioned previously. 
-Then open a new spreadsheet in [Google Sheets](sheets.new). Select File > Import and then select the CSV file.
+To begin I first imported the dataset into Google Sheets. To do this I downloaded the CSV file mentioned previously. 
+I then opened a new spreadsheet in [Google Sheets](sheets.new) and selected File > Import and then selected the CSV file.
 
 ![](initialscreentshot.png)<br>
 *Figure 1: Initial dataset upon importation.*
