@@ -63,9 +63,27 @@ Columns G, H, I and J feature nominal variables indicating the location of certa
 
 Column K features nominal variables indicating the method of contact. These include dispatch (phone call), walk-in, web and email.
 
-## 2.4 Inquiry about the dataset
+### 2.4 Inquiry about the dataset
 
 When looking at the dataset one question that comes to mind is the average resolve time of each request. I think this could be helpful in building a story with the dataset and will be something that I want to pursue later on.
+
+## 3. Understanding Data
+
+### 3.1. VIMO Analysis
+
+When looking over the dataset it appears to have strictly valid inputs. This can be expected when receiving data from a trusted source such as the City of Ottawa. There are no invalid points in the dataset. 
+However there are many missing elements marked as /N. This can be seen in columns F, G, H, I and J. These elements as mentioned previously are missing because of privacy and service requests not being completed yet.
+The dataset also features no outliers.
+
+![](missing-elements.png)<br>
+*Figure 1: Initial dataset upon importation.*
+Support your claims by citing relevant sources. Please follow [APA guidelines for in-text citations](https://apastyle.apa.org/style-grammar-guidelines/citations).
+
+**For example:**
+
+As Cairo (2016) argues, a data visualization should be truthful...
+
+### 3.2. Cleaning Data
 
 **Here are examples of functions and lines of code put in grey boxes:**
 
@@ -77,22 +95,6 @@ When looking at the dataset one question that comes to mind is the average resol
 =IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)
 ```
 This also shows how to create an ordered list. Simply put `1.` before each item.
-
-## 3. Understanding Data
-
-### 3.1. VIMO Analysis
-
-Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please follow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
-
-Insert text here.
-
-Support your claims by citing relevant sources. Please follow [APA guidelines for in-text citations](https://apastyle.apa.org/style-grammar-guidelines/citations).
-
-**For example:**
-
-As Cairo (2016) argues, a data visualization should be truthful...
-
-### 3.2. Cleaning Data
 
 Insert text here.
 
