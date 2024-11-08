@@ -72,11 +72,12 @@ When looking at the dataset one question that comes to mind is the average resol
 ### 3.1. VIMO Analysis
 
 When looking over the dataset it appears to have strictly valid inputs. This can be expected when receiving data from a trusted source such as the City of Ottawa. There are no invalid points in the dataset. 
-However there are many missing elements marked as /N. This can be seen in columns F, G, H, I and J. These elements as mentioned previously are missing because of privacy and service requests not being completed yet.
-The dataset also features no outliers.
+However there are many missing elements marked as \N. This can be seen in columns F, G, H, I and J. These elements as mentioned previously are missing because of privacy and service requests not being completed yet.
+The dataset features some outliers in column D. These pop up when the service request is about water and environment. In these scenarios the description of the request is left as \N.
 
 ![](missing-elements.png)<br>
-*Figure 1: Initial dataset upon importation.*
+*Figure 2: Missing elements in dataset*
+
 Support your claims by citing relevant sources. Please follow [APA guidelines for in-text citations](https://apastyle.apa.org/style-grammar-guidelines/citations).
 
 **For example:**
@@ -85,32 +86,48 @@ As Cairo (2016) argues, a data visualization should be truthful...
 
 ### 3.2. Cleaning Data
 
-**Here are examples of functions and lines of code put in grey boxes:**
-
-1. If you name a function, put it between "angled" quotation marks like this: `IMPORTHTML`.
-1. If you want to include the entire line of code, do the same thing, albeit with your entire code: `=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)`.
-1. Alternatively, you can put your code in an independent box using the template below:
+When going to clean my data the first thing I did was remove the french translations on every column title. I did this by manually deleting them. I then used the split function to remove the translated desciptions of service requests. I did this by using the function below
 
 ``` r
-=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)
+=SPLIT(D2, "|")
 ```
-This also shows how to create an ordered list. Simply put `1.` before each item.
 
-Insert text here.
+I then dragged this function across every single row using the light blue circle in the bottom of the cell. After doing this I hid the orignal column as well as the french translations to make the dataset cleaner.
+
+After that I concatenated the latitude and longitude columns. To do this I used the function below.
+
+``` r
+=CONCATENATE(J2, ", ", K2)
+```
+After inputting the function, google sheets prompted me with the option to autofill the entire column. I then accepted the autofill. After this I dragged the entire column down by one as the auto fill only seemed to prompt when putting the function in the first row. After this I hid the original two columns.
+
+Finally I used the find and replace function to remove all the instances of "/N"
+
+![](search.png)<br>
+*Figure 3: Find and replace function to remove all instances of "\N"*
+
+After all doing this my cleaned dataset can be seen below.
+
+![](cleaned-spreadsheet.png)<br>
+*Figure 3: My cleaned spreadsheet*
 
 ### 3.3. Exploratory Data Analysis (EDA)
 
-Insert text here.
+To explore my data further I decided to find the average response time for 311 service requests. To do this I started by making a new column filled with the function below. I got this function from a YouTube video explaing easy methods to find the amount of days between dates. I then used it to calculate the amount of days between service requests opening and closing.
+I then created a chart filled with the sums of the amount of days taken to process a request which can also be seen below. For the chart I chose a bar chart as noted in The Truthful Art: Data, Charts, and Maps for Communication (Cairo, 2016) because bar charts
+are at the top of the scale of elementary perceptual tasks inspired by William Cleveland and Robert McGill. Bar charts provide easy and accuarate estimates for looking at data according to the scale which is exactly what I was looking for.
+``` r
+=(H2 - G2)
+```
 
-**This section should include a screen capture of your pivot table, like so:**
+![](pivot.png)<br>
+*Figure 4: My pivot table showing the number of days taken to fulfill service requests*
 
-![](pivot-table-screen-capture.png)<br>
-*Figure 2: This pivot table shows...*
+![](Chart.png)<br>
+*Figure 5: My bar chart displaying the sum of each amount of days taken to fulfill service requests*
 
-**This section should also include a screen capture of your exploratory chart, like so:**
-
-![](chart-screen-capture.png)<br>
-*Figure 3: This exploratory chart shows...*
+I chose to use the opening and closing variables as I found them to be the most interesting variables to look into. I think it's interesting how the service requests seem to spike at a two week window and then the frequency of longer dates gets shorter.
+Overall through exlporing the data it points out that most requests are resolved within the first two weeks of opening. I think the next step to look into this would be to check for city policies to see if there is anything mentioned about a 14 day window.
 
 ## 4. Potential Story
 
@@ -122,8 +139,7 @@ Insert text here.
 
 ## 6. References
 
-Include a list of your references here. Please follow [APA guidelines for references](https://apastyle.apa.org/style-grammar-guidelines/references). Hanging paragraphs aren't required though.
 
-**Here's an example:**
+Cairo, A. The Truthful Art: Data, Charts, and Maps for Communication. (2016). New Riders. https://ocul-crl.primo.exlibrisgroup.com/discovery/fulldisplay?context=L&vid=01OCUL_CRL:CRL_DEFAULT&search_scope=MyInst_and_CI&tab=Everything&docid=alma991022766731805153
 
-Bounegru, L., & Gray, J. (Eds.). (2021). *The Data Journalism Handbook 2: Towards A Critical Data Practice*. Amsterdam University Press. [https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153](https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153)
+Academy, C. (2024, May 2). Count days between two dates in Google Sheets. YouTube. https://www.youtube.com/watch?v=xqoMftuR34o 
