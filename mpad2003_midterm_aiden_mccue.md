@@ -28,7 +28,7 @@ This report will be a overview and analysis of a City of Ottawa dataset. Specifi
 The dataset I will be using will be a [CSV file](https://raw.githubusercontent.com/jsmarier/course-datasets/refs/heads/main/ottawa-311-service-requests-august-2024.csv) for requests started in the month of August 2024.
 However the original CSV including signifcantly more of the year can be found [here](https://open.ottawa.ca/documents/65fe42e2502d442b8a774fd3d954cac5/about).
 The dataset was collected by the City of Ottawa and then released to the public. It features all 311 services requests made and information about them. This information includes locations, dates and descriptions of the each request.
-This report will be outlined in sections. These sections include getting the data, a quick overview of each column, cleaning the data.... 
+This report will be outlined in sections. These sections include getting the data, a quick overview of each column, analysis of the data, cleaning the data, visualization of the data and a potential story from the data.
 ## 2. Getting Data
 ### 2.1 Importation
 To begin I first imported the dataset into Google Sheets. To do this I downloaded the CSV file mentioned previously. 
@@ -131,11 +131,12 @@ Overall through exlporing the data it points out that most requests are resolved
 
 ## 4. Potential Story
 
-Insert text here.
-
+As mentioned before to tell the full story I would need to research about any potential policies surrounding a 14 day service request window as this is my hypothosis as to why there is such a drastic spike in two week response times. I would also need to look more into the types of requests and the length of time they require as certain requests may take different times than others. 
+After finding which requests take longer than others my next step would be to email any of the various designated emails for different request types located on this [site](https://ottawa.ca/en/3-1-1/find-people/department-directory#section-3f9641f9-23d2-4a2d-b7ab-5e0e3c70a661).
+After emailing I would be able to find out who to talk to and interview them about the service request process. After looking into this I could craft a potential story about needlessly long requests.
 ## 5. Conclusion
 
-Insert text here.
+Overall the most challenging aspect of this assignment for me was time management. 
 
 ## 6. References
 
