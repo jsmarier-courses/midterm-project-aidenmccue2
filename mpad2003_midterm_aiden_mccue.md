@@ -5,22 +5,6 @@
 
 # Midterm Project: Exploratory Data Analysis (EDA)
 
-Use one hashtag symbol (`#`) to create a level 1 heading like this one.
-
-## Foreword
-
-For this assignment, you must extract data from a dataset provided by the instructor. You must then clean and analyze the data, create exploratory charts/visualizations, and find a potential story idea. Your assignment must clearly detail your process. You are expected to write about 1500-2000 words, and to include several screen captures showing the different steps you went through. Your assignment must be written with the Markdown format and submitted on GitHub Classroom.
-
-I have been assigning different versions of this project to my digital journalism and data storytelling students for a few years now. Its structure was inspired by the main sections/chapters of [*The Data Journalism Handbook*](https://datajournalism.com/read/handbook/one/). This version was further inspired by the [Key Capabilities in Data Science](https://extendedlearning.ubc.ca/programs/key-capabilities-data-science) program offered by the University of British Columbia (UBC).
-
-**Here are some useful resources for this assignment:**
-
-* [GitHub's *Basic writing and formatting syntax* page](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-* [The template repository for this assignment in case you delete something by mistake](https://github.com/jsmarier/jou4100_jou4500_mpad2003_project2_template)
-
-Did you notice how to create a hyperlink? In Markdown, we put the clickable text between square brackets and the actual URL between parentheses.
-
-And to create an unordered list, we simply put a star (`*`) before each item.
 
 ## 1. Introduction
 
@@ -134,9 +118,12 @@ Overall through exlporing the data it points out that most requests are resolved
 As mentioned before to tell the full story I would need to research about any potential policies surrounding a 14 day service request window as this is my hypothosis as to why there is such a drastic spike in two week response times. I would also need to look more into the types of requests and the length of time they require as certain requests may take different times than others. 
 After finding which requests take longer than others my next step would be to email any of the various designated emails for different request types located on this [site](https://ottawa.ca/en/3-1-1/find-people/department-directory#section-3f9641f9-23d2-4a2d-b7ab-5e0e3c70a661).
 After emailing I would be able to find out who to talk to and interview them about the service request process. After looking into this I could craft a potential story about needlessly long requests.
+
 ## 5. Conclusion
 
-Overall the most challenging aspect of this assignment for me was time management. 
+Overall the most challenging aspect of this assignment for me was time management. I unfortunatly got sick just before the due date which caused a drastic decrease in my workflow. Material wise my biggest struggle was the VIMO analysis as I had to revist the material a couple times. I also stuggled with the lack of spell check in vs code. I found myself constantly double checking spelling instead of focusing on material. The most rewarding aspect of this assignment was also vs code. I enjoyed the workflow aside from the lack of spell check. It felt very familiar to previous courses and was a nice change of pace from regular documents.
+
+If I were to attempt this project again I would definitely start earlier to prevent any last second inconviences and having to rush at the end.
 
 ## 6. References
 
